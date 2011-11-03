@@ -1,3 +1,9 @@
+# revision 17274
+# category Package
+# catalog-ctan /macros/latex/contrib/framed
+# catalog-date 2010-03-09 13:05:51 +0100
+# catalog-license other-free
+# catalog-version 0.95
 Name:		texlive-framed
 Version:	0.95
 Release:	1
@@ -44,6 +50,7 @@ make your own framed-style environments.
 %{_texmfdistdir}/tex/latex/framed/framed.sty
 %doc %{_texmfdistdir}/doc/latex/framed/framed.pdf
 %doc %{_texmfdistdir}/doc/latex/framed/framed.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,3 +61,5 @@ make your own framed-style environments.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
