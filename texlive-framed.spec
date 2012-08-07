@@ -1,12 +1,12 @@
-# revision 17274
+# revision 26789
 # category Package
 # catalog-ctan /macros/latex/contrib/framed
-# catalog-date 2010-03-09 13:05:51 +0100
+# catalog-date 2012-06-01 12:48:04 +0200
 # catalog-license other-free
-# catalog-version 0.95
+# catalog-version 0.96
 Name:		texlive-framed
-Version:	0.95
-Release:	2
+Version:	0.96
+Release:	1
 Summary:	Framed or shaded regions that can break across pages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/framed
