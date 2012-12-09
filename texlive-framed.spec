@@ -51,3 +51,21 @@ make your own framed-style environments.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.96-1
++ Revision: 812267
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.95-2
++ Revision: 752094
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.95-1
++ Revision: 718504
+- texlive-framed
+- texlive-framed
+- texlive-framed
+- texlive-framed
+
