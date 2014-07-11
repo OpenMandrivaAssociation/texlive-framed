@@ -6,7 +6,7 @@
 # catalog-version 0.96
 Name:		texlive-framed
 Version:	0.96
-Release:	6
+Release:	7
 Summary:	Framed or shaded regions that can break across pages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/framed
