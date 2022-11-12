@@ -1,18 +1,12 @@
-# revision 26789
-# category Package
-# catalog-ctan /macros/latex/contrib/framed
-# catalog-date 2012-06-01 12:48:04 +0200
-# catalog-license other-free
-# catalog-version 0.96
 Name:		texlive-framed
-Version:	0.96
-Release:	10
+Version:	26789
+Release:	1
 Summary:	Framed or shaded regions that can break across pages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/framed
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/framed.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/framed.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/framed.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/framed.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ framed/shaded matter. There is also a command \MakeFramed to
 make your own framed-style environments.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -44,28 +38,10 @@ make your own framed-style environments.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.96-1
-+ Revision: 812267
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.95-2
-+ Revision: 752094
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.95-1
-+ Revision: 718504
-- texlive-framed
-- texlive-framed
-- texlive-framed
-- texlive-framed
-
