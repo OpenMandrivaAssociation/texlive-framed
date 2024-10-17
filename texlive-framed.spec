@@ -3,7 +3,7 @@ Version:	26789
 Release:	2
 Summary:	Framed or shaded regions that can break across pages
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/framed
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/framed
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/framed.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/framed.doc.r%{version}.tar.xz
